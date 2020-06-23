@@ -4,6 +4,8 @@ PROJECT("lua-gumbo")
 
 INCLUDE(ExternalProject)
 
+FIND_PACKAGE(PythonInterp 2.7 REQUIRED)
+
 SET(VERSION_EXTERNAL "0.5")
 SET(VERSION_DEV      "")
 SET(VERSION_PACKAGE  "1")
