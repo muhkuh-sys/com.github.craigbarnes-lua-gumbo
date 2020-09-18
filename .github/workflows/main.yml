@@ -85,8 +85,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: artifacts_${{ matrix.platform.distribution-id }}_${{ matrix.platform.distribution-version }}_${{ matrix.platform.cpu-architecture }}
-        path: |
-          build/repository/com/github/craigbarnes/lua-gumbo/*/*.tar.xz
-          build/repository/com/github/craigbarnes/lua-gumbo/*/*.xml
-          build/repository/com/github/craigbarnes/lua-gumbo/*/*.hash
-          build/repository/com/github/craigbarnes/lua-gumbo/*/*.pom
+        path: build/repository
