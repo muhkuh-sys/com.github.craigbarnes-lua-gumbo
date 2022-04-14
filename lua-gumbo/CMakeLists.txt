@@ -40,8 +40,8 @@ IF((${BUILDCFG_ONLY_JONCHKI_CFG} STREQUAL "OFF"))
 
 	ExternalProject_Add(TARGET_lua_gumbo
 	                    PREFIX ${CMAKE_CURRENT_BINARY_DIR}/lua-gumbo
-	                    URL ${CMAKE_CURRENT_SOURCE_DIR}/lua-gumbo-${VERSION_EXTERNAL}${VERSION_DEV}.tar.gz
-	                    URL_HASH SHA1=24d582efb098fab4726e0ed15f27745879cd2afa
+	                    URL ${CMAKE_CURRENT_SOURCE_DIR}/lua-gumbo-g3fe4d0f4.tar.bz2
+	                    URL_HASH SHA1=b3cfdd2222e74bb5a0044271ed03139cd40ffe3f
 	                    PATCH_COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/copy_over ${CMAKE_CURRENT_BINARY_DIR}/lua-gumbo/src/TARGET_lua_gumbo
 	                    CMAKE_ARGS ${PRJ_CMAKE_ARGS}
 	                    TEST_BEFORE_INSTALL 1
